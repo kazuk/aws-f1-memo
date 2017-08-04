@@ -2,7 +2,20 @@
 
 ## 日本語リソース
 
-ほぼ無い感じ。（だから書いてる）
+クラスメソッドさんの記事
+
+丁寧に解説されています。
+
+[AWS F1インスタンス向けのFPGA Developer AMIで開発ツールvivadoを動かしてみました #awssummit](http://dev.classmethod.jp/cloud/aws/aws-f1-fpga-developper-ami/)
+
+ FPGA developper AMI を起動して vivado を動かすまで、
+
+[AWSのFPGAインスタンス用サンプルカスタムロジックcl_hello_worldのAFIを構築してみました #fpga](http://dev.classmethod.jp/etc/fpga-afi-image-for-aws-f1-instance/)
+
+ カスタムロジックサンプルをビルドして AFI を構築するまで
+
+
+~~全然ない~~
 
 あまりにも寂しいので slack 作るだけは作ってみた。
 
@@ -134,3 +147,16 @@ $ sudo fpga-describe-local-image -S 0 --metrics
 
  [Do the pci_peek/poke interfaces expose backpressure to software?](https://forums.aws.amazon.com/thread.jspa?threadID=258846&tstart=0)
 
+
+
+
+
+## メモ
+
+[Vivado Design Suite のパーシャル リコンフィギュレーション](https://japan.xilinx.com/products/design-tools/vivado/implementation/partial-reconfiguration.html)
+
+AWS F1 が partial reconfiguration を使ってるって話
+
+<iframe src='//players.brightcove.net/17209957001/SywTPUVC_default/index.html?videoId=5410599833001' allowfullscreen frameborder=0></iframe>
+
+ネストした partial reconfiguration （partial reconfiguration で入れられる部分を partial reconfiguration する事)は少なくとも現状では無理なはずなので、ユーザーレベルでは partial reconfiguration は使えないはず。
